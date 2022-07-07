@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app"
+    android:layoutDirection="ltr"
+    android:overScrollMode="never"
+    android:padding="10dp"
+    tools:context=".ui.StoryFragment"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app"
+        android:layoutDirection="ltr"
+        android:padding="10dp">
+
+
+        <Button
+            android:id="@+id/btn_publish_post_new"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/view_shape"
+            android:backgroundTint="@color/background"
+            android:fontFamily="@font/louisgeorgecafebold"
+            android:gravity="center"
+            android:text="Publish"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_text_post" />
+
+
+        <ImageView
+            android:id="@+id/iv_ImageAdded"
+            android:layout_width="390dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imagep"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_text" />
+
+
+            <EditText
+                android:id="@+id/et_text_post"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/view_shape"
+                android:backgroundTint="#f7f7f7"
+                android:fontFamily="@font/louis"
+                android:hint="What are you thinking?"
+                android:layout_gravity="center"
+                android:minHeight="48dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textColorHint="#918282"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_ImageAdded"
+                android:textSize="18sp"
+               />
+
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/louisgeorgecafebold"
+            android:gravity="center"
+            android:text="Add new post"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@id/iv_ImageAdded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

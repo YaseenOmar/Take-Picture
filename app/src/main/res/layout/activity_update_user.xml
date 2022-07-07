@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateUser"
+    android:background="@color/app"
+    android:layoutDirection="ltr"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/image"
+        tools:ignore="MissingConstraints" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/updateImg"
+        android:src="@drawable/user"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/tv_nameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Full Name: "
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/louis"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img" />
+
+    <EditText
+        android:id="@+id/et_nameUser"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:hint="User name"
+        android:drawableStart="@drawable/ic_personn"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/louisltalic"
+        android:maxLength="40"
+        android:maxLines="1"
+        android:inputType="text"
+        android:background="@drawable/view_shape"
+        android:backgroundTint="#f7f7f7"
+        android:textColorHint="#918282"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nameTitle" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_passTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Password: "
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/louis"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_nameUser" />
+
+    <EditText
+        android:id="@+id/et_passUser"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:maxLength="40"
+        android:maxLines="1"
+        android:hint="Password"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/louisltalic"
+
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/view_shape"
+        android:backgroundTint="#f7f7f7"
+        android:textColorHint="#918282"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_passTitle" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/louisgeorgecafebold"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_passUser" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

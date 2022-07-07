@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "128808401805",
+    "project_id": "takpict",
+    "storage_bucket": "takpict.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128808401805:android:9227ed14d40c33cb4a9bc4",
+        "android_client_info": {
+          "package_name": "com.example.takpict"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128808401805-mvfo836don4kth9uprdtek5dr6tsjv13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAV93oqHB0dXuWnaPzxxJvhYPFxCtxFyc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128808401805-mvfo836don4kth9uprdtek5dr6tsjv13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

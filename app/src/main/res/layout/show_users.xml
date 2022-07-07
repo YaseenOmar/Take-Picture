@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundImage"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="ltr">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_view"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/view_shape"
+        android:backgroundTint="@color/white"
+        android:elevation="2dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/usersimg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+       />
+
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/louis"
+        android:drawableStart="@drawable/key"
+        android:padding="12dp"
+        android:drawablePadding="5dp"
+
+
+        />
+
+           <TextView
+               android:id="@+id/username"
+               android:layout_width="match_parent"
+               android:textColor="@color/black"
+               android:layout_height="48dp"
+               android:gravity="left"
+               android:textSize="17sp"
+               android:drawableStart="@drawable/ic_personn"
+               android:padding="12dp"
+               android:drawablePadding="5dp"
+               android:fontFamily="@font/louis"
+
+               />
+
+    <TextView
+        android:id="@+id/useremail"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="48dp"
+        android:gravity="left"
+        android:textSize="17sp"
+
+        android:fontFamily="@font/louis"
+        android:padding="12dp"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="5dp"
+       />
+
+
+    <TextView
+        android:id="@+id/userpass"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:textSize="17sp"
+        android:padding="12dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:fontFamily="@font/louis"
+        android:drawablePadding="5dp"
+        />
+
+
+
+
+
+
+
+       </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
